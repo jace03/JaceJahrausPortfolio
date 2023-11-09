@@ -1,8 +1,8 @@
 {
-    "intro": "I love to learn new things and experiment with new technologies.\nThese are some of the major languages, technologies, tools and platforms I have worked with:",
+    "intro": "The following languages and technologies are what I have worked with closely and learned In my professional career and education.",
     "skills": [{
      
-            "title": "Languages & Databases",
+            "title": "Educational Experience",
             "items" : [
      
                 {
@@ -27,7 +27,7 @@
                 }
         ]},
         {
-            "title": "Frameworks & Technologies",
+            "title": "Proffessional Experience",
             "items" : [
                 {
                     "icon": "images/skills/android_new.png",
@@ -41,23 +41,6 @@
                     "icon": "images/skills/nodejs.png",
                     "title": "Nodejs"
                 }
-            ]
-        },
-        {
-            "title" : "Tools & Platforms",
-            "items": [
-                {
-                    "icon": "images/skills/android-studio.png",
-                    "title": "Android Studio"
-                },
-                {
-                    "icon": "images/skills/git.png",
-                    "title": "Git"
-                },
-                {
-                    "icon": "images/skills/docker.png",
-                    "title": "Docker"
-                }
-            ]
+            ]             
     }
 ]}

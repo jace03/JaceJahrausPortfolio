@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import ReactMarkdown from 'react-markdown';
 import PropTypes from 'prop-types';
 import Fade from 'react-reveal';
-import { Container } from 'react-bootstrap';
+import { Container, Col, Row } from 'react-bootstrap';
 import Header from './Header';
 import endpoints from '../constants/endpoints';
 import FallbackSpinner from './FallbackSpinner';
@@ -19,6 +19,26 @@ const styles = {
   },
 };
 
+const stylesAbout = {
+  introTextContainer: {
+    margin: 10,
+    flexDirection: 'column',
+    whiteSpace: 'pre-wrap',
+    textAlign: 'left',
+    fontSize: '1.2em',
+    fontWeight: 500,
+  },
+  introImageContainer: {
+    margin: 10,
+    justifyContent: 'center',
+    alignItems: 'center',
+    display: 'flex',
+    borderBottomLeftRadius: 30,
+    borderBottomRightRadius: 30,
+    borderTopRightRadius: 30,
+    borderTopLeftRadius: 30,
+  },
+};
 function Skills(props) {
   const { header } = props;
   const [data, setData] = useState(null);
@@ -45,23 +65,33 @@ function Skills(props) {
         <Fade>
           <div className="section-content-container">
             <Container>
-              {renderSkillsIntro(data.intro)}
-              {data.skills?.map((rows) => (
-                <div key={rows.title}>
-                  <br />
-                  <h3>{rows.title}</h3>
-                  {rows.items.map((item) => (
-                    <div key={item.title} style={{ display: 'inline-block' }}>
-                      <img
-                        style={styles.iconStyle}
-                        src={item.icon}
-                        alt={item.title}
-                      />
-                      <p>{item.title}</p>
-                    </div>
-                  ))}
-                </div>
-              ))}
+              {data
+                ? (
+                  <Fade>
+                    <Row>
+                      {renderSkillsIntro(data.intro)}
+                      {data.skills?.map((rows) => (
+                        <Col style={stylesAbout.introTextContainer}>
+                          <div key={rows.title}>
+                            <br />
+                            <h3>{rows.title}</h3>
+                            {rows.items.map((item) => (
+                              <div key={item.title} style={{ display: 'inline-block' }}>
+                                <img
+                                  style={styles.iconStyle}
+                                  src={item.icon}
+                                  alt={item.title}
+                                />
+                                <p>{item.title}</p>
+                              </div>
+                            ))}
+                          </div>
+                        </Col>
+                      ))}
+                    </Row>
+                  </Fade>
+                )
+                : <FallbackSpinner />}
             </Container>
           </div>
         </Fade>

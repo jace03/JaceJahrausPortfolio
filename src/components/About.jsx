@@ -21,6 +21,10 @@ const styles = {
     justifyContent: 'center',
     alignItems: 'center',
     display: 'flex',
+    borderBottomLeftRadius: 30,
+    borderBottomRightRadius: 30,
+    borderTopRightRadius: 30,
+    borderTopLeftRadius: 30,
   },
 };
 
@@ -42,7 +46,7 @@ function About(props) {
       .then((res) => setData(res))
       .catch((err) => err);
   }, []);
-
+  console.log(data);
   return (
     <>
       <Header title={header} />
@@ -56,7 +60,7 @@ function About(props) {
                     {parseIntro(data.about)}
                   </Col>
                   <Col style={styles.introImageContainer}>
-                    <img src={data?.imageSource} alt="profile" />
+                    <img src={data?.imageSource} width={450} alt="profile" />
                   </Col>
                 </Row>
               </Fade>
