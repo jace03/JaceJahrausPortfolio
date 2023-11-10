@@ -32,11 +32,9 @@ function Home() {
       .then((res) => setData(res))
       .catch((err) => err);
   }, []);
-
   return data ? (
     <Fade>
-      <div style={styles.mainContainer}>
-        <h1 style={styles.nameStyle}>{data?.name}</h1>
+      <div style={styles.mainContainer} className="backgroundImage">
         <div style={{ flexDirection: 'row' }}>
           <h2 style={styles.inlineChild}>I&apos;m&nbsp;</h2>
           <Typewriter

@@ -46,7 +46,7 @@ function About(props) {
       .then((res) => setData(res))
       .catch((err) => err);
   }, []);
-  console.log(data);
+
   return (
     <>
       <Header title={header} />

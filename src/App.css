@@ -1,4 +1,9 @@
-
+.backgroundImage {
+  background-image: url("/public/images/home/lipset.jpg");
+  width: 2000px;
+  height: 2000px;
+  background-size: cover;
+}
 .App {
   text-align: center;
   align-items: center;
