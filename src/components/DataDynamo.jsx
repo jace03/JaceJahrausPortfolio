@@ -2,20 +2,10 @@ import React, { useState, useEffect } from 'react';
 import Typewriter from 'typewriter-effect';
 import Fade from 'react-reveal';
 import endpoints from '../constants/endpoints';
-// import Social from './Social';
+import Social from './Social';
 import FallbackSpinner from './FallbackSpinner';
 
 const styles = {
-  buttonStyle: {
-    height: 75,
-    width: 75,
-    margin: 10,
-    marginBottom: 0,
-    borderWidth: 5,
-    borderColor: '#0DAA0A',
-    borderRadius: '42px',
-    border: '3px solid rgba(#0DAA0A)',
-  },
   nameStyle: {
     fontSize: '5em',
   },
@@ -31,11 +21,7 @@ const styles = {
   },
 };
 
-function homeButtonAction() {
-  alert('you clicked me');
-}
-
-function Home() {
+function DataDynamo() {
   const [data, setData] = useState(null);
 
   useEffect(() => {
@@ -50,6 +36,7 @@ function Home() {
     <Fade>
       <div style={styles.mainContainer} className="backgroundImage">
         <div style={{ flexDirection: 'row' }}>
+          <h2 style={styles.inlineChild}>I&apos;m&nbsp;</h2>
           <Typewriter
             options={{
               loop: true,
@@ -58,19 +45,10 @@ function Home() {
             }}
           />
         </div>
-        {/* <Social /> */}
-        <div>
-          <button
-            type="button"
-            onClick={homeButtonAction}
-            style={styles.buttonStyle}
-          >
-            About Me
-          </button>
-        </div>
+        <Social />
       </div>
     </Fade>
   ) : <FallbackSpinner />;
 }
 
-export default Home;
+export default DataDynamo;

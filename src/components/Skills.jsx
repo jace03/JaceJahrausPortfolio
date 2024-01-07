@@ -24,9 +24,10 @@ const stylesAbout = {
     margin: 10,
     flexDirection: 'column',
     whiteSpace: 'pre-wrap',
-    textAlign: 'left',
+    textAlign: 'center',
     fontSize: '1.2em',
     fontWeight: 500,
+    paddingBottom: 300,
   },
   introImageContainer: {
     margin: 10,
@@ -82,7 +83,7 @@ function Skills(props) {
                                   src={item.icon}
                                   alt={item.title}
                                 />
-                                <p>{item.title}</p>
+                                {/* <p style={{ textAlign: 'center' }}>{item.title}</p> */}
                               </div>
                             ))}
                           </div>

@@ -16,6 +16,11 @@
             "headerTitle": "Education"
         },
         {
+            "component": "DataDynamo",
+            "path": "/datadynamo",
+            "headerTitle": "Data Dynamo"
+        },
+        {
             "component": "Experience",
             "path": "/experience",
             "headerTitle": "Experience"

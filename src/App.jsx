@@ -7,7 +7,8 @@ import useDarkMode from 'use-dark-mode';
 import AppContext from './AppContext';
 import MainApp from './MainApp';
 import GlobalStyles from './theme/GlobalStyles';
-import { lightTheme, darkTheme } from './theme/themes';
+import { darkTheme } from './theme/themes';
+// import { lightTheme, darkTheme } from './theme/themes';
 
 function App() {
   window.matchMedia = null;
@@ -15,7 +16,8 @@ function App() {
 
   return (
     <AppContext.Provider value={{ darkMode }}>
-      <ThemeProvider theme={darkMode.value ? darkTheme : lightTheme}>
+      {/* <ThemeProvider theme={darkMode.value ? darkTheme : lightTheme}> */}
+      <ThemeProvider theme={darkTheme}>
         <GlobalStyles />
         <div className="App">
           <BrowserRouter>
