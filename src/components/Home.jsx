@@ -7,14 +7,13 @@ import FallbackSpinner from './FallbackSpinner';
 
 const styles = {
   buttonStyle: {
-    height: 75,
-    width: 75,
-    margin: 10,
-    marginBottom: 0,
-    borderWidth: 5,
-    borderColor: '#0DAA0A',
-    borderRadius: '42px',
-    border: '3px solid rgba(#0DAA0A)',
+    backgroundColor: '#4caf50',
+    color: '#fff',
+    padding: '10px 15px',
+    borderRadius: '4px',
+    border: 'none',
+    cursor: 'pointer',
+    transition: 'background-color 0.3s ease',
   },
   nameStyle: {
     fontSize: '5em',
@@ -60,12 +59,8 @@ function Home() {
         </div>
         {/* <Social /> */}
         <div>
-          <button
-            type="button"
-            onClick={homeButtonAction}
-            style={styles.buttonStyle}
-          >
-            About Me
+          <button type="button" onClick={homeButtonAction} style={styles.buttonStyle}>
+            More
           </button>
         </div>
       </div>
