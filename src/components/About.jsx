@@ -9,15 +9,18 @@ import FallbackSpinner from './FallbackSpinner';
 
 const imageStyle = {
   display: 'block',
-  margin: '0 auto',
+  margin: 20,
+  borderRadius: 20,
   maxWidth: '100%', // Ensure the image doesn't exceed its container width
   height: 'auto', // Maintain aspect ratio
   width: 450, // Set the width of the image
 };
 const styles = {
+  titleStyle: {
+    padding: 20,
+  },
   iconStyle: {
-    height: 50,
-    width: 50,
+    height: 70,
     margin: 10,
     marginBottom: 0,
   },
@@ -108,9 +111,9 @@ function About(props) {
                   </Col>
                   <Col style={styles.introImageContainer}>
                     {data.skills?.map((rows) => (
-                      <div key={rows.title}>
+                      <div key={rows.title} style={styles.titleStyle}>
                         <br />
-                        <h3>{rows.title}</h3>
+                        <h3 style={styles.titleStyle}>{rows.title}</h3>
                         {rows.items.map((item) => (
                           <div key={item.title} style={{ display: 'inline-block' }}>
                             <img
@@ -121,7 +124,7 @@ function About(props) {
                             <p style={{ textAlign: 'center' }}>{item.title}</p>
                           </div>
                         ))}
-                        <h3>{rows.titleAmature}</h3>
+                        <h3 style={styles.titleStyle}>{rows.titleAmature}</h3>
                         {rows.itemsAmature.map((item) => (
                           <div key={item.titleAmature} style={{ display: 'inline-block' }}>
                             <img

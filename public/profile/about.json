@@ -59,6 +59,10 @@
             "title": "Java"
           },
           {
+            "icon": "images/skills/csharp.png",
+            "title": "C#"
+          },
+          {
             "icon": "images/skills/nodejs.png",
             "title": "Node"
           },
@@ -73,10 +77,6 @@
           {
             "icon": "images/skills/typescript.png",
             "title": "Typescript"
-          },
-          {
-            "icon": "images/skills/react.png",
-            "title": "React"
           }
         ]
       }
