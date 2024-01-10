@@ -7,7 +7,20 @@ import Header from './Header';
 import endpoints from '../constants/endpoints';
 import FallbackSpinner from './FallbackSpinner';
 
+const imageStyle = {
+  display: 'block',
+  margin: '0 auto',
+  maxWidth: '100%', // Ensure the image doesn't exceed its container width
+  height: 'auto', // Maintain aspect ratio
+  width: 450, // Set the width of the image
+};
 const styles = {
+  iconStyle: {
+    height: 50,
+    width: 50,
+    margin: 10,
+    marginBottom: 0,
+  },
   introTextContainer: {
     margin: 10,
     flexDirection: 'column',
@@ -19,19 +32,45 @@ const styles = {
   introImageContainer: {
     margin: 10,
     justifyContent: 'center',
-    alignItems: 'center',
     display: 'flex',
     borderBottomLeftRadius: 30,
     borderBottomRightRadius: 30,
     borderTopRightRadius: 30,
     borderTopLeftRadius: 30,
+    paddingBottom: 30,
   },
 };
+// const stylesAbout = {
+//   introTextContainer: {
+//     margin: 10,
+//     flexDirection: 'column',
+//     whiteSpace: 'pre-wrap',
+//     textAlign: 'center',
+//     fontSize: '1.2em',
+//     fontWeight: 500,
+//     paddingBottom: 300,
+//   },
+//   introImageContainer: {
+//     margin: 10,
+//     justifyContent: 'center',
+//     alignItems: 'center',
+//     display: 'flex',
+//     borderBottomLeftRadius: 30,
+//     borderBottomRightRadius: 30,
+//     borderTopRightRadius: 30,
+//     borderTopLeftRadius: 30,
+//   },
+// };
 
 function About(props) {
   const { header } = props;
   const [data, setData] = useState(null);
 
+  // const renderSkillsIntro = (intro) => (
+  //   <h4 style={styles.introTextContainer}>
+  //     <ReactMarkdown children={intro} />
+  //   </h4>
+  // );
   const parseIntro = (text) => (
     <ReactMarkdown
       children={text}
@@ -57,10 +96,44 @@ function About(props) {
               <Fade>
                 <Row>
                   <Col style={styles.introTextContainer}>
+                    <div style={{
+                      display: 'flex',
+                      justifyContent: 'center',
+                      alignItems: 'center',
+                    }}
+                    >
+                      <img src={data?.imageSource} style={imageStyle} alt="profile" />
+                    </div>
                     {parseIntro(data.about)}
                   </Col>
                   <Col style={styles.introImageContainer}>
-                    <img src={data?.imageSource} width={450} alt="profile" />
+                    {data.skills?.map((rows) => (
+                      <div key={rows.title}>
+                        <br />
+                        <h3>{rows.title}</h3>
+                        {rows.items.map((item) => (
+                          <div key={item.title} style={{ display: 'inline-block' }}>
+                            <img
+                              style={styles.iconStyle}
+                              src={item.icon}
+                              alt={item.title}
+                            />
+                            <p style={{ textAlign: 'center' }}>{item.title}</p>
+                          </div>
+                        ))}
+                        <h3>{rows.titleAmature}</h3>
+                        {rows.itemsAmature.map((item) => (
+                          <div key={item.titleAmature} style={{ display: 'inline-block' }}>
+                            <img
+                              style={styles.iconStyle}
+                              src={item.icon}
+                              alt={item.title}
+                            />
+                            <p style={{ textAlign: 'center' }}>{item.title}</p>
+                          </div>
+                        ))}
+                      </div>
+                    ))}
                   </Col>
                 </Row>
               </Fade>

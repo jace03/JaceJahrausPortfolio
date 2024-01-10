@@ -1,5 +1,39 @@
 {
-    "about":"Hi my name is Jace Jahraus. I have a passion for continued learning which has helped me become a successful programmer along with a strong ability to problem solving. I have a Diploma in Web and Mobile Applications Development and have two years of experience in the workforce as a Web and Applications Developer.\n\n\nI am seeking a full time position, either remote in Australia or local to the Sunshine Coast area.",
-    "imageSource": "images/about/jaceJahraus.png"
-
-}
+    "about": "Hi, my name is Jace Jahraus. I have a passion for continued learning which has helped me become a successful programmer along with a strong ability to problem solving. I have a Diploma in Web and Mobile Applications Development and have two years of experience in the workforce as a Web and Applications Developer.\n\n\nI am seeking a full-time position, either remote in Australia or local to the Brisbane or Sunshine Coast area.",
+    "imageSource": "images/about/jaceJahraus.png",
+    "intro": "The following languages and technologies are what I have worked with closely and learned in my professional career and education.",
+    "skills": [
+      {
+        "title": "Professional Experience",
+        "items": [
+          {
+            "icon": "images/skills/php.png",
+            "title": "PHP"
+          },
+          {
+            "icon": "images/skills/js.png",
+            "title": "JavaScript"
+          },
+          {
+            "icon": "images/skills/python.png",
+            "title": "Python"
+          },
+          {
+            "icon": "images/skills/mysql.png",
+            "title": "MySQL"
+          }
+        ],
+        "titleAmature": "Educational Experience",
+        "itemsAmature": [
+          {
+            "icon": "images/skills/java.png",
+            "title": "Java"
+          },
+          {
+            "icon": "images/skills/mysql.png",
+            "title": "MySQL"
+          }
+        ]
+      }
+    ]
+  }
