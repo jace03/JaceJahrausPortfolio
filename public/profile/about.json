@@ -7,20 +7,49 @@
         "title": "Professional Experience",
         "items": [
           {
+            "icon": "images/skills/html.png",
+            "title": "HTML5"
+          },
+          {
+            "icon": "images/skills/css.png",
+            "title": "CSS"
+          },
+          {
+            "icon": "images/skills/git.png",
+            "title": "Git"
+          },
+          {
+            "icon": "images/skills/js.png",
+            "title": "Javascript"
+          },
+          {
             "icon": "images/skills/php.png",
             "title": "PHP"
           },
           {
-            "icon": "images/skills/js.png",
-            "title": "JavaScript"
-          },
-          {
-            "icon": "images/skills/python.png",
-            "title": "Python"
+            "icon": "images/skills/bootstrap.png",
+            "title": "Bootstrap"
           },
           {
             "icon": "images/skills/mysql.png",
             "title": "MySQL"
+          },
+          {
+            "icon": "images/skills/photoshop.png",
+            "title": "Photoshop"
+          },
+          
+          {
+            "icon": "images/skills/figma.png",
+            "title": "Figma"
+          },
+          {
+            "icon": "images/skills/jquery.png",
+            "title": "Jquery"
+          },
+          {
+            "icon": "images/skills/wordpress.png",
+            "title": "Wordpress"
           }
         ],
         "titleAmature": "Educational Experience",
@@ -30,8 +59,24 @@
             "title": "Java"
           },
           {
-            "icon": "images/skills/mysql.png",
-            "title": "MySQL"
+            "icon": "images/skills/nodejs.png",
+            "title": "Node"
+          },
+          {
+            "icon": "images/skills/react.png",
+            "title": "React"
+          },
+          {
+            "icon": "images/skills/python.png",
+            "title": "Python"
+          },
+          {
+            "icon": "images/skills/typescript.png",
+            "title": "Typescript"
+          },
+          {
+            "icon": "images/skills/react.png",
+            "title": "React"
           }
         ]
       }
