@@ -1,0 +1,5 @@
+[
+    { "id": 1, "brand": "Toyota", "model": "Camry" },
+    { "id": 2, "brand": "Honda", "model": "Accord" },
+    { "id": 3, "brand": "Ford", "model": "Mustang" }
+]

@@ -1,51 +1,95 @@
 import React, { useState, useEffect } from 'react';
-import Typewriter from 'typewriter-effect';
 import Fade from 'react-reveal';
-import endpoints from '../constants/endpoints';
-import Social from './Social';
 import FallbackSpinner from './FallbackSpinner';
 
 const styles = {
-  nameStyle: {
-    fontSize: '5em',
-  },
-  inlineChild: {
-    display: 'inline-block',
-  },
   mainContainer: {
     height: '100%',
     display: 'flex',
     flexDirection: 'column',
-    justifyContent: 'center',
     alignItems: 'center',
+  },
+  paginationContainer: {
+    display: 'flex',
+    justifyContent: 'center',
+    marginTop: '20px',
+  },
+  addButton: {
+    marginLeft: '10px',
+    cursor: 'pointer',
   },
 };
 
+const pageSize = 10; // Number of items per page
+
 function DataDynamo() {
   const [data, setData] = useState(null);
+  const [currentPage, setCurrentPage] = useState(1);
 
   useEffect(() => {
-    fetch(endpoints.home, {
-      method: 'GET',
-    })
+    // Fetch data from your JSON file
+    fetch('/profile/dataDynamo.json') // Replace with the correct path
       .then((res) => res.json())
-      .then((res) => setData(res))
-      .catch((err) => err);
+      .then((res) => setData({ cars: res })) // Assuming 'cars' is the array property
+      .catch((err) => console.error('Error fetching data:', err));
   }, []);
+
+  const handleAddCar = () => {
+    // Add a new car to the data (for simplicity, let's generate a random car)
+    setData((prevData) => ({
+      ...prevData,
+      cars: [...(prevData?.cars || []), { id: Date.now(), brand: 'Random Brand', model: 'Random Model' }],
+    }));
+  };
+
+  const handleRemoveCar = (id) => {
+    // Remove a car based on its ID
+    setData((prevData) => ({
+      ...prevData,
+      cars: (prevData?.cars || []).filter((car) => car.id !== id),
+    }));
+  };
+
+  const totalPages = Math.ceil((data?.cars || []).length / pageSize);
+  const startIndex = (currentPage - 1) * pageSize;
+  const endIndex = startIndex + pageSize;
+  const currentCars = (data?.cars || []).slice(startIndex, endIndex);
+
   return data ? (
     <Fade>
-      <div style={styles.mainContainer} className="backgroundImage">
-        <div style={{ flexDirection: 'row' }}>
-          <h2 style={styles.inlineChild}>I&apos;m&nbsp;</h2>
-          <Typewriter
-            options={{
-              loop: true,
-              autoStart: true,
-              strings: data?.roles,
-            }}
-          />
+      <div style={styles.mainContainer}>
+        <h2>Cars</h2>
+        <ul>
+          {currentCars.map((car) => (
+            <li key={car.id}>
+              {`${car.brand} ${car.model}`}
+              <button type="button" onClick={() => handleRemoveCar(car.id)}>Remove</button>
+            </li>
+          ))}
+        </ul>
+        <div style={styles.paginationContainer}>
+          <p>
+            Page
+            {currentPage}
+            of
+            {totalPages}
+          </p>
+          <button
+            type="button"
+            onClick={() => setCurrentPage((prev) => Math.max(prev - 1, 1))}
+          >
+            Previous
+          </button>
+          <button
+            type="button"
+            onClick={() => setCurrentPage((prev) => Math.min(prev + 1, totalPages))}
+          >
+            Next
+          </button>
         </div>
-        <Social />
+        <button type="button" style={styles.addButton} onClick={handleAddCar}>
+          Add Car
+        </button>
       </div>
     </Fade>
   ) : <FallbackSpinner />;
