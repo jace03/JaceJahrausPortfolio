@@ -60,7 +60,7 @@ function Home() {
         {/* <Social /> */}
         <div>
           <button type="button" onClick={homeButtonAction} style={styles.buttonStyle}>
-            More
+            About Me
           </button>
         </div>
       </div>
