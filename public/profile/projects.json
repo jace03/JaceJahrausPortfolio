@@ -20,26 +20,14 @@
         },
         {
             "image" : "images/projects/LPTArticlesData.jpg",
-            "title": "Caaring -  Cab Share App",
+            "title": "Registry Connection's web application",
             "bodyText": "- A Cab Sharing web app made using **Django** for **VIT** Students. People can create a new cab or request to join an existing cab.\n - Added User authentication and password reset using **SendGrid**.\n - Deployed on **heroku** using **gunicorn**.",
-            "links": [
-                {
-                    "text": "GitHub",
-                    "href": "https://github.com/mayankagarwal09/Caaring"
-                },
-                {
-                    "text": "Live",
-                    "href": "http://caaring.herokuapp.com"
-                }
-            ],
             "tags" : [
-                "Python",
-                "Django",
-                "BootStrap",
-                "SendGrid",
-                "Heroku",
-                "Gunicorn",
-                "VIT"
+                "JQuery",
+                "PHP",
+                "Bootstrap",
+                "SQL",
+                "GIT"
             ]
         },
         {
