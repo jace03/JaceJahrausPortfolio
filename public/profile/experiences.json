@@ -1,33 +1,33 @@
 {
     "experiences": [
         {
-            "title": "Software Engineer",
-            "subtitle": "XYZ Ltd",
-            "workType": "Full-time",
+            "title": "CDI College",
+            "subtitle": "Web and Mobile Application Developer",
             "workDescription": [
                 "Integrated **2** new product.",
                 "Worked on adding **def** to **bcd**. Improved speed by 50%."
             ],
-            "dateText": "06/20XX – Present"
+            "dateText": "10/2020 – 12/2021"
         },
         {
-            "title": "Software Engineer",
-            "subtitle": "XYZ Ltd",
-            "workType": "Internship",
+            "title": "Junior Web Developer",
+            "subtitle": "Registry Connection",
+            "workType": "Internship into full employment",
             "workDescription": [
-                "Worked on abc."
+                "Developed Learners-Practice-Test.ca",
+                "Created a number of wordpress websites for clients including Registry Connections.",
+                "Started Saas project that controls question, answers and all sessions from Learners-Practice-Test as well as was future proofing the software for for Saas."
             ],
-            "dateText": "01/20XX – 05/20XX"
+            "dateText": "12/2021 – 11/2023"
         },
         {
-            "title": "App Developer",
-            "subtitle": "ABC Pvt Ltd",
-            "workType": "Freelance",
+            "title": "Travelling",
+            "subtitle": "Move from Canada to Australia",
             "workDescription": [
-                "Developed the official apps for the startup for both Android and iOS using hybrid framework.",
-                "Done bcd work."
+                "Spent a year travel",
+                "Realized the competition is high and started building this porfolio to get ahead of the competition."
             ],
-            "dateText": "09/20XX – 01/20YY"
+            "dateText": "12/2023 – Present"
         }
     ]
 }
