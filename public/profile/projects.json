@@ -31,8 +31,8 @@
             ]
         },
         {
-            "image" : "images/projects/quiet-hours-poster.jpg",
-            "title": "Quiet Hours App",
+            "image" : "images/projects/portfolioPoster.png",
+            "title": "This Portfolio",
             "bodyText": "- An Android App that **automatically silences** your phone during class hours, designed for **VITians**.\n - Option to select class **slots** and **custom time**.\n - Option to put on Vibrate instead of Silent.",
             "links": [
                 {
@@ -41,7 +41,7 @@
                 }
             ],
             "tags" : [
-                "Java",
+                "React",
                 "Android",
                 "Alarm Manager",
                 "VIT"
