@@ -1,47 +1,33 @@
 {
     "projects" : [
         {
-            "image" : "images/projects/portfolio-poster.png",
-            "title": "Dev Portfolio",
-            "bodyText": "- Developer Portfolio Website made in React\n -  Fully customisable and dynamic, easily change data and images.\n - Dark Mode Support",
+            "image" : "images/projects/LPT.png",
+            "title": "Learners-Practice-Test",
+            "bodyText": "- A learner's practice test for a driver's license is like a trial exam before the real one.\n - Added User authentication and password reset using **PHPMail**.\n - Mobile first using bootstrap",
             "links": [
                 {
-                    "text": "GitHub",
-                    "href": "https://github.com/mayankagarwal09/dev-portfolio"
-                },
-                {
                     "text": "Live",
-                    "href": "https://mayankagarwal.me"
+                    "href": "https://learners-practice-test.ca"
                 }
             ],
             "tags" : [
-                "React",
-                "Portfolio",
-                "JavaScript"
+                "JavaScript",
+                "PHP",
+                "Bootstrap",
+                "SQL",
+                "GIT"
             ]
         },
         {
-            "image" : "images/projects/caaring-poster.png",
-            "title": "Caaring -  Cab Share App",
+            "image" : "images/projects/LPTArticlesData.jpg",
+            "title": "Registry Connection's web application",
             "bodyText": "- A Cab Sharing web app made using **Django** for **VIT** Students. People can create a new cab or request to join an existing cab.\n - Added User authentication and password reset using **SendGrid**.\n - Deployed on **heroku** using **gunicorn**.",
-            "links": [
-                {
-                    "text": "GitHub",
-                    "href": "https://github.com/mayankagarwal09/Caaring"
-                },
-                {
-                    "text": "Live",
-                    "href": "http://caaring.herokuapp.com"
-                }
-            ],
             "tags" : [
-                "Python",
-                "Django",
-                "BootStrap",
-                "SendGrid",
-                "Heroku",
-                "Gunicorn",
-                "VIT"
+                "JQuery",
+                "PHP",
+                "Bootstrap",
+                "SQL",
+                "GIT"
             ]
         },
         {
