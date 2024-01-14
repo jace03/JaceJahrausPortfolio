@@ -77,6 +77,10 @@
           {
             "icon": "images/skills/typescript.png",
             "title": "Typescript"
+          },
+          {
+            "icon": "images/skills/laravel.png",
+            "title": "Laravel"
           }
         ]
       }
