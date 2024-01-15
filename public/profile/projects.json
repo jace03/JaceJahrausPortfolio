@@ -37,7 +37,7 @@
             "links": [
                 {
                     "text": "GitHub",
-                    "href": "https://github.com/mayankagarwal09/QuietHours-Android"
+                    "href": "https://github.com/jace03/JaceJahrausPortfolio.git"
                 }
             ],
             "tags" : [
@@ -50,7 +50,7 @@
         {
             "image" : "images/projects/wordpress.PNG",
             "title": "Wordpress Developement",
-            "bodyText": "- Registry Connections web page.\n - Didsbury Registries.\n - Vanda Agencies",
+            "bodyText": "- Used Elementor on all pages.\n - Brainstormed UI/UX in scrum meetings.\n - Had to upkeep a couple of other non elementor wordpress sites.",
             "links": [
                 {
                     "text": "Registry Connection",
@@ -64,12 +64,6 @@
                     "text": "Didsbury Registries",
                     "href": "https://www.didsburyregistries.ca/"
                 }
-            ],
-            "tags" : [
-                "React",
-                "Node",
-                "Alarm Manager",
-                "VIT"
             ]
         }
     ]
