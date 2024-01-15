@@ -49,12 +49,20 @@
         },
         {
             "image" : "images/projects/wordpress.PNG",
-            "title": "This Portfolio",
-            "bodyText": "- An Android App that **automatically silences** your phone during class hours, designed for **VITians**.\n - Option to select class **slots** and **custom time**.\n - Laravel Back end soon to come",
+            "title": "Wordpress Developement",
+            "bodyText": "- Registry Connections web page.\n - Didsbury Registries.\n - Vanda Agencies",
             "links": [
                 {
-                    "text": "GitHub",
-                    "href": "https://github.com/mayankagarwal09/QuietHours-Android"
+                    "text": "Registry Connection",
+                    "href": "https://registryconnection.ca/"
+                },
+                {
+                    "text": "Vanda Agencies",
+                    "href": "https://www.vandaagencies.ca/"
+                },
+                {
+                    "text": "Didsbury Registries",
+                    "href": "https://www.didsburyregistries.ca/"
                 }
             ],
             "tags" : [
