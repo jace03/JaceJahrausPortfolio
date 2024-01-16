@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import Typewriter from 'typewriter-effect';
 import Fade from 'react-reveal';
+import { Link } from 'react-router-dom/cjs/react-router-dom.min';
 import endpoints from '../constants/endpoints';
 // import Social from './Social';
 import FallbackSpinner from './FallbackSpinner';
@@ -30,10 +31,6 @@ const styles = {
   },
 };
 
-function homeButtonAction() {
-  alert('you clicked me');
-}
-
 function Home() {
   const [data, setData] = useState(null);
 
@@ -59,9 +56,9 @@ function Home() {
         </div>
         {/* <Social /> */}
         <div>
-          <button type="button" onClick={homeButtonAction} style={styles.buttonStyle}>
-            About Me
-          </button>
+          <Link to="/About">
+            <button type="button" style={styles.buttonStyle}>About</button>
+          </Link>
         </div>
       </div>
     </Fade>

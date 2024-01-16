@@ -3,7 +3,7 @@
         {
             "image" : "images/projects/LPT.png",
             "title": "Learners-Practice-Test",
-            "bodyText": "- A learner's practice test for a driver's license is like a trial exam before the real one.\n - Added User authentication and password reset using **PHPMail**.\n - Mobile first using bootstrap",
+            "bodyText": "- Was involved in every piece of this project, got all direction through scrum meetings. \n - Each answer was saved so the user could leave and come back.\n - Graphs used to show progress of all past tests.",
             "links": [
                 {
                     "text": "Live",
@@ -20,8 +20,8 @@
         },
         {
             "image" : "images/projects/LPTArticlesData.jpg",
-            "title": "Registry Connection's web application",
-            "bodyText": "- A Cab Sharing web app made using **Django** for **VIT** Students. People can create a new cab or request to join an existing cab.\n - Added User authentication and password reset using **SendGrid**.\n - Not a public website.",
+            "title": "Registry Connection's Web App",
+            "bodyText": "- All Registry Connections Company Control panel including the companies internal affairs.\n - All questions and answers for Learners-Practice-Test.ca along with all user's answers, scores, payment histories are shown and able to edit and delete.\n - Full lists of all Registry Connection’s affiliates, driving schools and the examiners with add, edit and delete capabilities.\n - Not a public website.",
             "tags" : [
                 "JQuery",
                 "PHP",
@@ -33,7 +33,7 @@
         {
             "image" : "images/projects/portfolioPoster.png",
             "title": "This Portfolio",
-            "bodyText": "- An Android App that **automatically silences** your phone during class hours, designed for **VITians**.\n - Option to select class **slots** and **custom time**.\n - Laravel Back end soon to come",
+            "bodyText": "-  Used creating this as a learning experience and to upskill.\n - First project in React.\n - Laravel Back end soon to come",
             "links": [
                 {
                     "text": "GitHub",
@@ -43,14 +43,14 @@
             "tags" : [
                 "React",
                 "Node",
-                "Alarm Manager",
+                "Amazon AWS",
                 "VIT"
             ]
         },
         {
             "image" : "images/projects/wordpress.PNG",
             "title": "Wordpress Developement",
-            "bodyText": "- Used Elementor on all pages.\n - Brainstormed UI/UX in scrum meetings.\n - Had to upkeep a couple of other non elementor wordpress sites.",
+            "bodyText": "- Used Elementor on all pages.\n - Brainstormed UI/UX in scrum meetings and clients input.\n - Had to upkeep a couple of other non elementor wordpress sites.",
             "links": [
                 {
                     "text": "Registry Connection",

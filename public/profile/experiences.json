@@ -4,19 +4,20 @@
             "title": "CDI College",
             "subtitle": "Web and Mobile Application Developer",
             "workDescription": [
-                "Integrated **2** new product.",
-                "Worked on adding **def** to **bcd**. Improved speed by 50%."
+                "Computer science program that focused on programming logic.",
+                "Program involved learning and mastering the various programming languages used by app developers, including C#, Java, ASP.net, JavaScript, JQuery, PHP/MySQL, HTML5, CSS, Linux, Python, Android, and Swift plus more."
             ],
-            "dateText": "10/2020 – 12/2021"
+            "dateText": "10/2019 – 12/2021"
         },
         {
             "title": "Junior Web Developer",
             "subtitle": "Registry Connection",
-            "workType": "Internship into full employment",
             "workDescription": [
-                "Developed Learners-Practice-Test.ca",
-                "Created a number of wordpress websites for clients including Registry Connections.",
-                "Started Saas project that controls question, answers and all sessions from Learners-Practice-Test as well as was future proofing the software for for Saas."
+                "Internship turned into full employment.",
+                "Scrum and Agile Developement",
+                "Developed Learners-Practice-Test.ca.",
+                "Developed a 'dashboard' to control all the content on Learners-Practice-test.ca (Saas)",
+                "Created a number of wordpress websites for clients including Registry Connections."
             ],
             "dateText": "12/2021 – 11/2023"
         },
@@ -24,8 +25,9 @@
             "title": "Travelling",
             "subtitle": "Move from Canada to Australia",
             "workDescription": [
-                "Spent a year travel",
-                "Realized the competition is high and started building this porfolio to get ahead of the competition."
+                "This year was spent moving, travelling and experiencing life in SEQ.",
+                "Realized the competition is high and started developing this porfolio in react to get employed.",
+                "Currently expanding my knowledge in React and Laravel."
             ],
             "dateText": "12/2023 – Present"
         }
