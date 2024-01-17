@@ -23,6 +23,7 @@ const styles = {
   },
   cardTextStyle: {
     textAlign: 'left',
+    minHeight: 200,
   },
   linkStyle: {
     textDecoration: 'none',

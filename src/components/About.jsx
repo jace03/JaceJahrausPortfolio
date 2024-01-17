@@ -11,16 +11,16 @@ const imageStyle = {
   display: 'block',
   margin: 20,
   borderRadius: 20,
-  maxWidth: '100%', // Ensure the image doesn't exceed its container width
-  height: 'auto', // Maintain aspect ratio
-  width: 450, // Set the width of the image
+  maxWidth: '100%',
+  height: 'auto',
+  width: 450,
 };
 const styles = {
   titleStyle: {
     padding: 20,
   },
   iconStyle: {
-    height: 70,
+    height: 50,
     margin: 10,
     marginBottom: 0,
   },
@@ -43,27 +43,6 @@ const styles = {
     paddingBottom: 30,
   },
 };
-// const stylesAbout = {
-//   introTextContainer: {
-//     margin: 10,
-//     flexDirection: 'column',
-//     whiteSpace: 'pre-wrap',
-//     textAlign: 'center',
-//     fontSize: '1.2em',
-//     fontWeight: 500,
-//     paddingBottom: 300,
-//   },
-//   introImageContainer: {
-//     margin: 10,
-//     justifyContent: 'center',
-//     alignItems: 'center',
-//     display: 'flex',
-//     borderBottomLeftRadius: 30,
-//     borderBottomRightRadius: 30,
-//     borderTopRightRadius: 30,
-//     borderTopLeftRadius: 30,
-//   },
-// };
 
 function About(props) {
   const { header } = props;
