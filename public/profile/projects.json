@@ -48,7 +48,7 @@
             ]
         },
         {
-            "image" : "images/projects/wordpress.PNG",
+            "image" : "images/projects/wordpress.png",
             "title": "Wordpress Developement",
             "bodyText": "- Used Elementor on all pages.\n - Brainstormed UI/UX in scrum meetings and clients input.\n - Had to upkeep a couple of other non elementor wordpress sites.",
             "links": [
