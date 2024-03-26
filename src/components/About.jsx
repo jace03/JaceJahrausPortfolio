@@ -29,7 +29,7 @@ const styles = {
     flexDirection: 'column',
     whiteSpace: 'pre-wrap',
     textAlign: 'left',
-    fontSize: '1.2em',
+    fontSize: '1em',
     fontWeight: 500,
   },
   introImageContainer: {
