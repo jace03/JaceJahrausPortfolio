@@ -21,6 +21,11 @@
             "headerTitle": "Data Dynamo"
         },
         {
+            "component": "Todo",
+            "path": "/todo",
+            "headerTitle": "To Do"
+        },
+        {
             "component": "Experience",
             "path": "/experience",
             "headerTitle": "Experience"

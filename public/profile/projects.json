@@ -33,7 +33,7 @@
         {
             "image" : "images/projects/portfolioPoster.png",
             "title": "This Portfolio",
-            "bodyText": "-  Used creating this as a learning experience and to upskill.\n - First project in React.\n - Laravel Back end soon to come",
+            "bodyText": "-  Used creating this as a learning experience and to upskill.\n - First project in React.",
             "links": [
                 {
                     "text": "GitHub",
