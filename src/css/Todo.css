@@ -1,73 +1,86 @@
-/* Styling for the todo list */
+.App{
+  display:flex;
+}
+.section-content-container {
+  display:block;
+}
+.main{
+  width: 890px;
+}
+.todo-item {
+  padding: 15px;
+  background-color: #daecff;
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  margin:0;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-bottom: 1px solid rgb(207, 207, 207); /* Add border-bottom property */
+}
 .todo-list {
-    list-style: none; /* Removes default list styles */
-    padding: 0; /* Removes default padding */
-    margin-bottom: 20px; /* Adds some space below the todo list */
-    margin-top: 20px; /* Adds some space below the todo list */
-  }
+  margin-top:5px; 
+  padding-top: 20px;
+  padding-left: 5px;
+}
+.todo-item span {
+  flex: 1;
+  color: #352929;
+  font-weight: bold;
+}
+
+.todo-item div {
+  display: flex;
+  align-items: center;
+}
+/* --------------------------------------------- */
+
+.todo-button:last-child {
+  margin-right: 0; /* Remove right margin for the last button */
+}
+.todo-buttons button {
+  margin-left: 5px;
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+  font-size: 16px;
+  transition: transform 0.2s ease;
+  height:40px;
+}
+
+.todo-buttons button:hover {
+  transform: scale(1.1);
+}
+
+.todo-buttons button:focus {
+  outline: none;
+}
+
+.todo-buttons button:active {
+  transform: scale(0.95);
+}
+  /* ------------------------ */
   
-  /* Styling for the todo input and buttons container */
-  .todo-input-container {
-    margin-bottom: 10px; /* Adds some space below the input container */
-  }
-  
-  /* Styling for the todo input */
   .todo-input {
-    width: calc(90% - 170px); /* Adjusts the width of the input */
-    padding: 8px; /* Adds padding to the input */
-    border-radius: 5px; /* Adds rounded corners to the input */
-    border: 1px solid #ccc; /* Adds a border to the input */
+    width: calc(100% - 120px);
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ced4da;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+    height:40px; /* Adjust the height of the input field as needed */
+    vertical-align: middle;
   }
   
-  /* Styling for the todo buttons container */
-  .todo-buttons {
-    display: inline-block; /* Makes buttons display in a line */
-    width: 170px; /* Adjusts the width of the buttons container */
+  .todo-input:focus {
+    border-color: #80bdff;
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
   }
-  
-  /* Styling for the todo buttons */
-  .todo-buttons button {
-    margin-left: 5px; /* Adds some space between buttons */
-    cursor: pointer; /* Changes cursor to pointer for interaction */
+  .todo-container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   }
-  
-  /* Styling for each todo item */
-  .todo-item {
-    padding: 10px; /* Adds padding around each todo item */
-    background-color: #ffcc00; /* Sets a fun yellow background color */
-    display: flex; /* Makes the todo items display as flex containers */
-    align-items: center; /* Centers items vertically within each todo item */
-    border-radius: 8px; /* Adds rounded corners to each todo item for a playful look */
-    margin-bottom: 10px; /* Adds some space between todo items */
-  }
-  
-  /* Styling for the text within each todo item */
-  .todo-item span {
-    flex: 1; /* Allows the text to expand and fill the available space */
-    color: #333; /* Sets the text color to dark */
-    font-weight: bold; /* Sets the text to bold */
-    margin-left: 10px; /* Adds some space between the icon and text */
-  }
-  
-  /* Styling for the section content container */
-  .section-content-container {
-    color: #f4f4f4; /* Sets the text color to light */
-  }
-  
-  /* Media query for small screens */
-  @media only screen and (max-width: 578px) {
-    .todo-item {
-      flex-direction: column; /* Stacks items vertically on small screens */
-      align-items: flex-start; /* Aligns items to the start of the column */
-    }
-  
-    .todo-buttons {
-      width: 100%; /* Makes buttons container take full width on small screens */
-      margin-top: 5px; /* Adds some space between buttons and input on small screens */
-    }
-  
-    .todo-buttons button {
-      margin-left: 0; /* Removes margin between buttons on small screens */
-      margin-top: 5px; /* Adds some space between buttons vertically on small screens */
-    }
-  }
+  /* todo-buttons-container .btn {
+    vertical-align:baseline !important;
+  } */

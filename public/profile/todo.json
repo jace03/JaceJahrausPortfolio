@@ -1,17 +1,15 @@
 [
-    {
-       "id": 1,
-       "task": "Learn React",
-       "completed": false
-    },
-    {
-       "id": 2,
-       "task": "Build a Todo List",
-       "completed": false
-    },
-    {
-       "id": 3,
-       "task": "Deploy the application",
-       "completed": false
-    }
-   ]
+   {
+      "id": 1,
+      "task": "Learn React"
+   },
+   {
+      "id": 2,
+      "task": "Build a To do List"
+   },
+   {
+      "id": 3,
+      "task": "Deploy the application"
+   }
+]
+

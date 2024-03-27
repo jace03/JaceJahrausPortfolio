@@ -11,7 +11,12 @@ function Todo(props) {
   const { header } = props;
   const [data, setData] = useState(null);
   const [newTodo, setNewTodo] = useState(''); // Initialize newTodo state
-  const [todos, setTodos] = useState([]); // Initialize todos state
+
+  const [todos, setTodos] = useState([
+    { id: 1, task: 'Buy groceries', completed: false },
+    { id: 2, task: 'Clean the house', completed: false },
+    { id: 3, task: 'Finish project', completed: false },
+  ]);
 
   useEffect(() => {
     fetch(endpoints.todo, {
@@ -23,9 +28,17 @@ function Todo(props) {
   }, []);
 
   const addTodo = () => {
+    // Trim whitespace from newTodo and check if it's empty
+    const trimmedTodo = newTodo.trim();
+    if (trimmedTodo === '') {
+      // Alert the user or handle empty input case as needed
+      alert('Please enter a valid todo.');
+      return; // Exit early if input is empty
+    }
+
     // Logic to add new todo
     // Example: Assuming newTodo is added to todos array
-    setTodos([...todos, { id: todos.length + 1, task: newTodo, completed: false }]);
+    setTodos([...todos, { id: todos.length + 1, task: trimmedTodo, completed: false }]);
     setNewTodo(''); // Clear input after adding todo
   };
 
@@ -60,13 +73,22 @@ function Todo(props) {
 
   const printTodos = () => {
     // Logic to print todos
-    console.log(todos);
+    alert(todos);
   };
+
+  useEffect(() => {
+    fetch(endpoints.projects, {
+      method: 'GET',
+    })
+      .then((res) => res.json())
+      .then((res) => setData(res))
+      .catch((err) => err);
+  }, []);
 
   return (
     <>
       <Header title={header} />
-      <div className="section-content-container">
+      <div className="">
         <Container>
           {data
             ? (
@@ -79,8 +101,8 @@ function Todo(props) {
                     placeholder="Enter a new todo"
                     className="todo-input"
                   />
-                  <Button onClick={addTodo} variant="success">Add Todo</Button>
-                  <Button onClick={printTodos} variant="info">Print Todos</Button>
+                  <Button onClick={addTodo} variant="success">Add </Button>
+                  <Button onClick={printTodos} variant="info">Print </Button>
                   <ul className="todo-list">
                     {todos.map((todo, index) => (
                       <li key={todo.id} className="todo-item">
