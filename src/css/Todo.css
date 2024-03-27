@@ -1,12 +1,6 @@
-.App{
-  display:flex;
-}
-.section-content-container {
-  display:block;
-}
-.main{
+/* .main{
   width: 890px;
-}
+} */
 .todo-item {
   padding: 15px;
   background-color: #daecff;
